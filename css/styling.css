@@ -2,23 +2,16 @@ html, body{
     margin: 0px;
 }
 
-h1{
-    background-color: black;
-}
 
 header{
     display: flex;
-    justify-content: space-between;
+    justify-content:right;
 }
 
-aside{
-    display: flex;
-    position: 50%;
-    }
-
+/* Min meny */
 nav {
     display: flex;
-    justify-content: center;
+    justify-content: right;
     font-size: 100%;
 
     
@@ -40,23 +33,26 @@ section {
     display: flex;
     width: 100vw;
 }
-
+/* Id:n för bildsidan och text sidan*/
 #blue {
     display:flex;
     justify-content: center;
     background-color: blueviolet;
     width: 100%;
     height: 100vh;
+    padding-top: 50%;
 }
-
+/* Id:n för bildsidan och text sidan*/
 #red {
     display:flex;
     justify-content: center;
     background-color: red;
     width: 100%;
     height: 100vh;
+    padding-top: 50%;
+    
 }
-
+/* desktop-anpassad kod */
 @media screen and (min-width: 768px){
     body{
         background-color: aqua;
