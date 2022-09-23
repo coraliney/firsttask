@@ -8,14 +8,16 @@ html, body{
 header{
     display: flex;
     justify-content:right;
+
 }
 
 /* Min meny */
 nav {
     display: flex;
-
+    width: 100vw;
     font-size: 100%;
     color:#1E2529;
+
     
 
     
@@ -27,7 +29,8 @@ ul {
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
+
 
     }
 
@@ -53,6 +56,7 @@ text-decoration: none;
 
 li {
     display: flex;
+    padding: 5%;
 }
 
 /*INNEHÅLL*/
@@ -88,7 +92,7 @@ width: 75%;
 /* Id:n för bildsidan och text sidan*/
 #blue {
     display:flex;
-    justify-content:center;
+    justify-content:left;
     background-color: #1E2529;
     width: 100%;
     height: 100vh;
