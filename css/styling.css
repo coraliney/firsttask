@@ -1,7 +1,7 @@
 /* Mobil version */
 html, body{
     margin: 0px;
-
+    overflow-x:hidden
 }
 
 header{
@@ -9,19 +9,21 @@ header{
     justify-content:right;
 }
 
-/* Min meny */
+/* Min meny som jag blivit tokig av- lämnar den såhär för hjälp*/
 nav {
-justify-content: right;
+justify-content:right;
+
     display: flex;
     width: 100vw;
     font-size: 100%;
     color:#1E2529;
-    position: fixed;
+    position:absolute;
     left: 0; 
     right: 0; 
     top: 0;
     height: 30px;
     margin-bottom: 30px;
+    padding: 14px 16px;
        
 }
 ul {
@@ -67,12 +69,31 @@ section {
     width: 100vw;
 }
 /* ANIMATIONEN */
-.word {
-    margin: auto;
-    color: white;
-    font: 700 normal 2.5em 'tahoma';
-    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
   }
+
+  .contentbox {
+    position: relative;
+  }
+  .contentbox span {
+    position: relative;
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: flip 2s infinite;
+    animation-delay: calc(.2s * var(--i))
+  }
+  @keyframes flip {
+    0%,80% {
+      transform: rotateY(360deg) 
+    }
+  }
+
+
 
 
 .imagecontainer {
@@ -136,4 +157,8 @@ footer {
 
     }
 
+.nav {
+    float: none;
+    width: 100%;
+  }
 }
