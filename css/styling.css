@@ -25,6 +25,7 @@ li {
     display: flex;
 
 }
+/*INNEHÅLL*/
 main {
     display: flex;
 }
@@ -33,27 +34,57 @@ section {
     display: flex;
     width: 100vw;
 }
+/*TEXTEN PÅ CAROLINE OCH FRONT END DEVELOPER*/
+p{
+    align-content: center;
+    color: aliceblue;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+h4{
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
 /* Id:n för bildsidan och text sidan*/
 #blue {
     display:flex;
-    justify-content: center;
-    background-color: blueviolet;
-    width: 100%;
-    height: 100vh;
-    padding-top: 50%;
-}
-/* Id:n för bildsidan och text sidan*/
-#red {
-    display:flex;
-    justify-content: center;
-    background-color: red;
+    justify-content:center;
+    background-color: #0c1445;
     width: 100%;
     height: 100vh;
     padding-top: 50%;
     
 }
+/* Id:n för bildsidan och text sidan*/
+#red {
+    display:flex;
+    justify-content: center;
+    background-color: #0c1445;
+    width: 100%;
+    height: 100vh;
+    padding-top: 50%;
+    
+}
+
+#panda {
+    display: flex;
+    justify-content: center;
+    height:70%;
+    width: 60%;
+    object-fit: scale-down;
+
+
+}
+
+
 /* desktop-anpassad kod */
 @media screen and (min-width: 768px){
+    .float-right-lg{
+        float: right;
+    }
     body{
         background-color: aqua;
 
