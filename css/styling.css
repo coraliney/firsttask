@@ -4,34 +4,32 @@ html, body{
 
 }
 
-
 header{
     display: flex;
     justify-content:right;
-
 }
 
 /* Min meny */
 nav {
+justify-content: right;
     display: flex;
     width: 100vw;
     font-size: 100%;
     color:#1E2529;
 
-    
-
-    
+       
 }
 ul {
-
     padding: 0;
     list-style: none;
     cursor: pointer;
     display: flex;
     flex-direction: row;
+    }
 
-
-
+li {
+        display: flex;
+        padding: 5%;
     }
 
 /* menyns colors */
@@ -54,12 +52,7 @@ background-color: transparent;
 text-decoration: none;
       }
 
-li {
-    display: flex;
-    padding: 5%;
-}
-
-/*INNEHÅLL*/
+/*INNEHÅLL på min förstasida*/
 main {
     display: flex;
 }
@@ -69,13 +62,14 @@ section {
     width: 100vw;
 }
 
+
+.imagecontainer {
+    width: 75%;
+    }
+
 img{
     width:100%; /*Ligga hundra procent i lådan*/
     height: auto;  /*Justera uppåt oavsett vad som händer*/
-}
-
-.imagecontainer {
-width: 75%;
 }
 
 /*TEXTEN PÅ CAROLINE OCH FRONT END DEVELOPER*/
@@ -87,10 +81,8 @@ width: 75%;
         margin: 40px 0px;
     }
 
-
-
-/* Id:n för bildsidan och text sidan*/
-#blue {
+/* Id:n text sidan*/
+#textcontainer {
     display:flex;
     justify-content:left;
     background-color: #1E2529;
@@ -100,8 +92,8 @@ width: 75%;
 
     
 }
-/* Id:n för bildsidan och text sidan*/
-#red {
+/* Id:n för bildsidan*/
+#photocontainer {
     display:flex;
     justify-content: center;
     background-color: #1E2529;
